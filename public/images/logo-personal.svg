@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="184px" height="184px" viewBox="0 0 184 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Oval</title>
+    <g id="Work" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Work-Full-Height" transform="translate(-1118.000000, -1737.000000)" stroke="#DDDBF5" stroke-width="3">
+            <g id="cat-section" transform="translate(0.000000, 1025.000000)">
+                <path d="M1210,894 C1259.70563,894 1300,853.705627 1300,804 C1300,754.294373 1259.70563,714 1210,714 C1160.29437,714 1120,754.294373 1120,804" id="Oval" transform="translate(1210.000000, 804.000000) rotate(90.000000) translate(-1210.000000, -804.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

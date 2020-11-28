@@ -1,0 +1,297 @@
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.Work {
+
+    button {
+        margin: auto;
+        background: none;
+        border: 1px solid #DDDBF5;
+        color: rgb(221, 219, 245);
+        padding: 5px 0;
+        border-radius: 30px;
+        width: 200px;
+        font-size: 16px;
+        font-family: 'Jost', sans-serif;
+        letter-spacing: 1.75px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    .Work_btn:hover {
+        background: #DDDBF5;
+        color: #0A0746;
+    }
+    .Work_wrapper {
+        width: 100vw;
+        height: 90vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            font-size: 60px;
+            letter-spacing: 3.5px;
+            font-style: italic;
+            font-size: clamp(60px, 8vw, 100px);
+        }
+    }
+    .Work_flex {
+        cursor: pointer;
+    }
+    .Work_arrow-down {
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 7%;
+        animation-name: slideDown; 
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+    .Work_wrapper:nth-child(2) {
+        justify-content: space-evenly;
+    }
+    .Work_logo {
+        min-width: 100px;
+        width: clamp(100px, 10vw, 140px);
+        margin: auto;
+        transition: transform 0.5s ease-in-out;
+        img {
+            width: 100%;
+        }
+    }
+    .Work_flex:hover .Work_logo {
+        transform: scale(1.1);
+    }
+    .Work_flex:nth-child(3):hover .Work_logo {
+        transform: scale(1.1) rotate(90deg);
+    }
+    .Work_title {
+        margin-top: 2%;
+        font-weight: 500;
+        display: inline-block;
+        font-size: 23px;
+        position: relative;
+        font-size: clamp(23px, 3vw, 46px);
+        letter-spacing: 1.34px;
+    }
+    .Work_title::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 0%;
+        transition: width 0.5s ease-in-out;
+        height: 2px;
+        background-color: #DDDBF5;
+    }
+    .Work_flex:hover .Work_title::after {
+        width: 100%;
+    }
+    .Work_ironhack {
+        padding: 40px 0;
+
+        .ironhack_project {
+            margin-top: 30px;
+    
+            h3 {
+                font-size: 35px;
+            }
+        }
+        .project_text {
+            margin: auto;
+            margin-top: 20px;
+            width: 85%;
+            font-size: 14px;
+        }
+        .Work_btn {
+            margin-top: 20px;
+        }
+    }
+    .Work_showroom {
+        padding: 40px 0;
+
+        h3 {
+            font-size: 25px;
+        }
+        p {
+            margin: auto;
+            margin-top: 20px;
+            width: 85%;
+            font-size: 14px;
+        }
+        .showroom_logo {
+            margin: auto;
+            width: 60%;
+            max-width: 550px;
+            margin-bottom: 30px;
+    
+            img {
+                width: 100%;
+            }
+        }
+        .showroom_landings {
+            margin: 30px auto auto auto;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
+        .showroom_landing {
+            position: relative;
+            box-sizing: border-box;
+            cursor: pointer;
+            flex-basis: 39%;
+            width: auto;
+            height: auto;
+            transition: 1s all;
+            top: 0;
+            left: 0;
+        }
+        .showroom_landing-full {
+            margin: 0!important;
+            z-index: 10;
+            position: fixed;
+            overflow-y: scroll;
+            transform: translate(-50%, -50%);
+            width: 90vw;
+            height: 80vh;
+            top: 55%;
+            left: 50%;
+        }
+        .showroom_landing:nth-child(2) {
+            margin-left: -10%;
+            margin-top: 5%;
+        }
+        .showroom_landing:nth-child(3) {
+            margin-left: -10%;
+            margin-top: 10%;
+        }
+        .showroom_landing:nth-child(4) {
+            margin-left: -10%;
+            margin-top: 15%;
+        }
+        .showroom_landing:nth-child(5) {
+            margin-left: -10%;
+            margin-top: 20%;
+        }
+    }
+    .Work_personal {
+        padding: 40px 0;
+
+        .personal_logo {
+            margin: auto;
+            max-width: 100px;
+
+            img {
+                width: 100%;
+            }
+        }
+        .personal_project {
+            margin-top: 30px;
+
+            h3 {
+                font-size: 25px;
+            }
+            p {
+                margin: auto;
+                margin-top: 20px;
+                width: 85%;
+                font-size: 14px;
+            }
+            button {
+                margin-top: 20px;
+            }
+        }
+    }
+    .project_title {
+        font-size: clamp(35px, 3.5vw, 50px)!important;
+    }
+    .project_text {
+        font-size: clamp(14px, 1.5vw, 18px)!important;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .Work {
+        .Work_wrapper {
+            h2 {
+            
+            }
+        }
+        .Work_flex {
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Work_flex-reverse {
+            flex-direction: row-reverse;
+        }
+        .Work_logo {
+            margin: 0;
+        }
+        .Work_title {
+            margin: 0;
+        }
+        .Work_title::after {
+            height: 4px;
+        }
+        .Work_ironhack {
+            .Work_logo {
+                margin: auto;
+            }
+            .ironhack_project {
+                margin: 80px auto auto auto;
+                width: 80%;
+                text-align: left;
+
+                p {
+                    width: 100%;
+                }
+            }
+            .project_text {
+                margin-top: 30px;
+            }
+            .Work_btn {
+                margin-top: 30px;
+                font-size: 18px;
+            }
+        }
+        .Work_showroom {
+            text-align: left;
+            h3 {
+                margin: 60px auto auto auto;
+                width: 80%;
+            }
+            p {
+                width: 80%;
+                margin-top: 30px;
+            }
+        }
+        .Work_personal {
+            text-align: left;
+            .personal_project {
+                margin: 60px auto auto auto;
+                width: 80%;
+                p {
+                    margin-top: 30px;
+                    width: 100%;
+                }
+                button {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

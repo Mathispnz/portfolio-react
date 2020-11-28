@@ -1,0 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+.App {
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  background-color: #0A0746;
+  color: #DDDBF5;
+  padding-top: 10vh;
+}
+
+.App img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.App button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.App input:focus {
+  outline: none;
+}
+.App textarea:focus {
+  outline: none;
+}
+
+.App a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

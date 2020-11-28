@@ -1,0 +1,115 @@
+.Education {
+    padding: 40px 0;
+
+    .Education_title {
+        margin: auto;
+        width: 80%;
+        display: inline-block;
+        font-size: 45px;
+        letter-spacing: 3.5px;
+        text-align: left;
+    }
+
+    .Education_wrap {
+        padding: 50px 0;
+        h4 {
+            font-size: 40px;
+            font-size: clamp(40px, 5vw, 50px);
+            position: relative;
+            z-index: 2;
+            font-weight: 600;
+            letter-spacing: 4.66px;
+        }
+    }
+
+    .Education_flex {
+        display: flex;
+        flex-direction: column-reverse;
+
+        h3 {
+            font-size: 20px;
+            font-size: clamp(20px, 2.5vw, 24px);
+        }
+        p {
+            margin: auto;
+            margin-top: 20px;
+            font-size: 14px;
+            font-size: clamp(14px, 2vw, 16px);
+            width: 90%;
+            max-width: 611px;
+        }
+    }
+    .Education_logo {
+        margin: auto;
+        margin-top: -40px;
+        max-width: 250px;
+        opacity: 0.6;
+        width: 40%;
+        img {
+            width: 100%;
+        }
+    }
+    .Education_content {
+        padding: 20px 0 30px 0;
+    }
+    .Education_languages {
+        margin: auto;
+        width: 90%;
+        max-width: 643px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .Education_language {
+        flex: 0 1 15%;
+        img {
+            width: 100%;
+        }
+    }
+    .Education_btnTo-work {
+        margin: auto;
+        width: 90%;
+        color: #DDDBF5;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 30px;
+            font-size: clamp(30px, 3vw, 40px);
+            font-weight: 600;
+            letter-spacing: 5px;
+            display: inline-block;
+            position: relative;
+        }
+        p::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 4%;
+            width: 0%;
+            transition: width 0.5s ease-in-out;
+            height: 2px;
+            background-color: #DDDBF5;
+        }
+    }
+    .Education_btnTo-work:hover p::after {
+        width: 90%;
+    }
+    @keyframes slideRight {
+        from {
+            transform: translateX(-10px);
+        }
+        to {
+            transform: translateX(0px);
+        }
+    }
+    .Education_btnTo-work > .Education_arrow-right {
+        max-width: 120px;
+        padding: 0 10px;
+        animation-name: slideRight;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+}
