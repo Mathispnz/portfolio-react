@@ -45,7 +45,7 @@ export default function Education() {
                 </div>
             </div>
 
-            <Link to="/work"><button className="Education_btnTo-work">
+            <Link to="/portfolio-react/work"><button className="Education_btnTo-work">
                 <div className="Education_arrow-right">
                     <img src={process.env.PUBLIC_URL + "/images/arrow-work.svg"} alt="" />
                 </div>
