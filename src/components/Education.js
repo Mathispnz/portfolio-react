@@ -18,6 +18,7 @@ export default function Education() {
 
                     <div className="Education_logo">
                         <img src="/images/logo-ironhack.png" alt="" />
+                        <img src={process.env.PUBLIC_URL + "/images/logo-ironhack.png"} alt="" />
                     </div>
                 </div>
 
