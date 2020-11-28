@@ -14,7 +14,7 @@ function Navbar() {
             <div className="Navbar_content">
                 <Link to="/">
                     <div className="Navbar_logo">
-                        <img src="/images/mp-logo.svg" alt="MP" />
+                        <img src={process.env.PUBLIC_URL + "/images/mp-logo.svg"} alt="MP" />
                     </div>
                 </Link>
 

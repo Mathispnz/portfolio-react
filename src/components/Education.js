@@ -17,17 +17,17 @@ export default function Education() {
                     </div>
 
                     <div className="Education_logo">
-                        <img src="/images/logo-ironhack.png" alt="" />
+                        <img src={process.env.PUBLIC_URL + "/images/logo-ironhack.png"} alt="" />
                         <img src={process.env.PUBLIC_URL + "/images/logo-ironhack.png"} alt="" />
                     </div>
                 </div>
 
                 <div className="Education_languages">
-                    <div className="Education_language"><img src="/images/html5.png" alt="HTML5" /></div>
-                    <div className="Education_language"><img src="/images/css3.png" alt="CSS3" /></div>
-                    <div className="Education_language"><img src="/images/js.png" alt="JavaScript" /></div>
-                    <div className="Education_language"><img src="/images/nodejs.png" alt="NodeJS" /></div>
-                    <div className="Education_language"><img src="/images/react.png" alt="React" /></div>
+                    <div className="Education_language"><img src={process.env.PUBLIC_URL + "/images/html5.png"} alt="HTML5" /></div>
+                    <div className="Education_language"><img src={process.env.PUBLIC_URL + "/images/css3.png"} alt="CSS3" /></div>
+                    <div className="Education_language"><img src={process.env.PUBLIC_URL + "/images/js.png"} alt="JavaScript" /></div>
+                    <div className="Education_language"><img src={process.env.PUBLIC_URL + "/images/nodejs.png"} alt="NodeJS" /></div>
+                    <div className="Education_language"><img src={process.env.PUBLIC_URL + "/images/react.png"} alt="React" /></div>
                 </div>
             </div>
 
@@ -41,14 +41,14 @@ export default function Education() {
                     </div>
 
                     <div className="Education_logo">
-                        <img src="/images/logo-sorbonne.png" alt=""/>
+                        <img src={process.env.PUBLIC_URL + "/images/logo-sorbonne.png"} alt=""/>
                     </div>
                 </div>
             </div>
 
             <Link to="/work"><button className="Education_btnTo-work">
                 <div className="Education_arrow-right">
-                    <img src="/images/arrow-work.svg" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/images/arrow-work.svg"} alt="" />
                 </div>
                 <p><i>Work</i></p>
             </button></Link>

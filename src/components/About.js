@@ -8,7 +8,7 @@ export default function About() {
 
             <div className="About_content">
                 <div className="About_portrait">
-                    <img src="/images/profile-pic.jpg" alt="Portrait" />
+                    <img src={process.env.PUBLIC_URL + "/images/profile-pic.jpg"} alt="Portrait" />
                 </div>
 
                 <div className="About_wrapper_text">

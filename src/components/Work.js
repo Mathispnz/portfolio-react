@@ -31,30 +31,30 @@ export default function Work() {
                 <h2>Work</h2>
 
                 <div className="Work_arrow-down" onClick={scrollTo}>
-                    <img src="/images/arrow-down.svg" alt="Arrow down" />
+                    <img src={process.env.PUBLIC_URL + "/images/arrow-down.svg"} alt="Arrow down" />
                 </div>
             </div>
 
             <div className="Work_wrapper" ref={elAnchor}>
                 <div className="Work_flex Work_flex-reverse" onClick={() => {scrollToView('ironhack')}}>
-                    <div className="Work_logo"><img src="/images/logo-ironhack.png" alt="Ironhack Logo" /></div>
+                    <div className="Work_logo"><img src={process.env.PUBLIC_URL + "/images/logo-ironhack.png"} alt="Ironhack Logo" /></div>
                     <h3 className="Work_title">Projects @ Ironhack</h3>
                 </div>
 
                 <div className="Work_flex" onClick={() => {scrollToView('showroom')}}>
-                    <div className="Work_logo"><img src="/images/logo-pink.svg" alt="Showroomprive Logo" /></div>
+                    <div className="Work_logo"><img src={process.env.PUBLIC_URL + "/images/logo-pink.svg"} alt="Showroomprive Logo" /></div>
                     <h3 className="Work_title">Work @ Showroomprive.com</h3>
                 </div>
 
                 <div className="Work_flex Work_flex-reverse" onClick={() => {scrollToView('personal')}}>
-                    <div className="Work_logo"><img src="/images/logo-personal.svg" alt="Personal Logo" /></div>
+                    <div className="Work_logo"><img src={process.env.PUBLIC_URL + "/images/logo-personal.svg"} alt="Personal Logo" /></div>
                     <h3 className="Work_title">Personal Projects</h3>
                 </div>
             </div>
 
             <div id="ironhack" className="Work_ironhack">
                 <div className="Work_logo">
-                    <img src="/images/logo-ironhack.png" alt="Ironhack Logo" />
+                    <img src={process.env.PUBLIC_URL + "/images/logo-ironhack.png"} alt="Ironhack Logo" />
                 </div>
 
                 <div className="ironhack_project">
@@ -84,7 +84,7 @@ export default function Work() {
 
             <div id="showroom" className="Work_showroom">
                 <div className="showroom_logo">
-                    <img src="/images/logo-srp.png" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/images/logo-srp.png"} alt="" />
                 </div>
 
                 <h3>HTML | CSS | JS</h3>
@@ -95,26 +95,26 @@ export default function Work() {
 
                 <div className="showroom_landings">
                     <div className={fullScreen ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen(!fullScreen)}}>
-                        <img src="/images/lp-1.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL + "/images/lp-1.jpg"} alt="" />
                     </div>
                     <div className={fullScreen2 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen2(!fullScreen2)}}>
-                        <img src="/images/lp-2.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL + "/images/lp-2.jpg"} alt="" />
                     </div>
                     <div className={fullScreen3 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen3(!fullScreen3)}}>
-                        <img src="/images/lp-3.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL + "/images/lp-3.jpg"} alt="" />
                     </div>
                     <div className={fullScreen4 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen4(!fullScreen4)}}>
-                        <img src="/images/lp-4.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL + "/images/lp-4.jpg"} alt="" />
                     </div>
                     <div className={fullScreen5 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen5(!fullScreen5)}}>
-                        <img src="/images/lp-5.jpg" alt="" />
+                        <img src={process.env.PUBLIC_URL + "/images/lp-5.jpg"} alt="" />
                     </div>
                 </div>
             </div>
 
             <div id="personal" className="Work_personal">
                 <div className="personal_logo">
-                    <img src="/images/logo-personal.svg" alt="" />
+                    <img src={process.env.PUBLIC_URL + "/images/logo-personal.svg"} alt="" />
                 </div>
 
                 <div className="personal_project">
