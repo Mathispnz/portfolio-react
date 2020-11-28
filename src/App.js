@@ -19,11 +19,11 @@ function App() {
         <Navbar />
 
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/work" component={Work} />
-          <Route path="/education" component={Education} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
+          <Route exact path="/portfolio-react/" component={Home} />
+          <Route path="/portfolio-react/work" component={Work} />
+          <Route path="/portfolio-react/education" component={Education} />
+          <Route path="/portfolio-react/about" component={About} />
+          <Route path="/portfolio-react/contact" component={Contact} />
         </Switch>
       </div>
     </Router>
