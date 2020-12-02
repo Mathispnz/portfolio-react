@@ -146,41 +146,63 @@
             display: flex;
             justify-content: center;
         }
-        .showroom_landing {
+        .showroom_landing-wrapper {
+            flex-basis: 39%;
             position: relative;
             box-sizing: border-box;
             cursor: pointer;
-            flex-basis: 39%;
             width: auto;
+            border-radius: 3px;
             height: auto;
+            background: rgba(221, 219, 245, 0.5);
             transition: 1s all;
-            top: 0;
-            left: 0;
+            top: 0%;
+            left: 0%;
+            transition: top 1s, left 1s, width 1s, filter 1s, opacity 1s;
+            max-height: 200px;
+            overflow: hidden;
+        }
+        .showroom_landing {
+            top: -100%;
+            filter: grayscale(60%);
+            transition: filter 0.5s;
+        }
+        .showroom_landing-wrapper:hover .showroom_landing {
+            filter: grayscale(0%);
         }
         .showroom_landing-full {
+            opacity: 1;
             margin: 0!important;
             z-index: 10;
             position: fixed;
-            overflow-y: scroll;
+            border-radius: 3px;
+            filter: none;
+            overflow: auto;
+            max-height: none;
+            box-shadow: 0px 0px 15px black;
             transform: translate(-50%, -50%);
             width: 90vw;
+            transition: top 1s, left 1s;
             height: 80vh;
             top: 55%;
             left: 50%;
+            &:hover {
+                top: 55%;
+            }
         }
-        .showroom_landing:nth-child(2) {
+        .showroom_landing-wrapper:nth-child(2) {
             margin-left: -10%;
             margin-top: 5%;
         }
-        .showroom_landing:nth-child(3) {
+        .showroom_landing-wrapper:nth-child(3) {
             margin-left: -10%;
             margin-top: 10%;
         }
-        .showroom_landing:nth-child(4) {
+        .showroom_landing-wrapper:nth-child(4) {
             margin-left: -10%;
             margin-top: 15%;
         }
-        .showroom_landing:nth-child(5) {
+        .showroom_landing-wrapper:nth-child(5) {
             margin-left: -10%;
             margin-top: 20%;
         }
@@ -277,6 +299,9 @@
             p {
                 width: 80%;
                 margin-top: 30px;
+            }
+            .showroom_landing-wrapper {
+                max-height: 500px;
             }
         }
         .Work_personal {

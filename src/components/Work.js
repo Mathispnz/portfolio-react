@@ -94,20 +94,30 @@ export default function Work() {
                 100% complex responsive pages with sliders, fixed banners, animations.</p>
 
                 <div className="showroom_landings">
-                    <div className={fullScreen ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen(!fullScreen)}}>
-                        <img src={process.env.PUBLIC_URL + "/images/lp-1.jpg"} alt="" />
+                    <div className="showroom_landing-wrapper">
+                        <div className={fullScreen ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen(!fullScreen)}}>
+                            <img src={process.env.PUBLIC_URL + "/images/lp-1.png"} alt="" />
+                        </div>
                     </div>
-                    <div className={fullScreen2 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen2(!fullScreen2)}}>
-                        <img src={process.env.PUBLIC_URL + "/images/lp-2.jpg"} alt="" />
+                    <div className="showroom_landing-wrapper">
+                        <div className={fullScreen2 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen2(!fullScreen2)}}>
+                            <img src={process.env.PUBLIC_URL + "/images/lp-2.png"} alt="" />
+                        </div>
                     </div>
-                    <div className={fullScreen3 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen3(!fullScreen3)}}>
-                        <img src={process.env.PUBLIC_URL + "/images/lp-3.jpg"} alt="" />
+                    <div className="showroom_landing-wrapper">
+                        <div className={fullScreen3 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen3(!fullScreen3)}}>
+                            <img src={process.env.PUBLIC_URL + "/images/lp-3.png"} alt="" />
+                        </div>
                     </div>
-                    <div className={fullScreen4 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen4(!fullScreen4)}}>
-                        <img src={process.env.PUBLIC_URL + "/images/lp-4.jpg"} alt="" />
+                    <div className="showroom_landing-wrapper">
+                        <div className={fullScreen4 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen4(!fullScreen4)}}>
+                            <img src={process.env.PUBLIC_URL + "/images/lp-4.png"} alt="" />
+                        </div>
                     </div>
-                    <div className={fullScreen5 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen5(!fullScreen5)}}>
-                        <img src={process.env.PUBLIC_URL + "/images/lp-5.jpg"} alt="" />
+                    <div className="showroom_landing-wrapper">
+                        <div className={fullScreen5 ? "showroom_landing showroom_landing-full" : "showroom_landing"} onClick={() => {setFullScreen5(!fullScreen5)}}>
+                            <img src={process.env.PUBLIC_URL + "/images/lp-5.png"} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
