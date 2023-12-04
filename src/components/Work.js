@@ -70,7 +70,7 @@ export default function Work() {
 
                     <p className="project_text">Music application realised with NodeJS library. You can login through Passport.js with your Spotify, Deezer or LastFM account. The backend selects your twenty top artists and you can generate five songs about your favourite genre from these top artists.</p>
 
-                    <a target="_blank" rel="noopener noreferrer" href="https://flowse.herokuapp.com/"><button className="Work_btn">Go</button></a>
+                    {/* <a target="_blank" rel="noopener noreferrer" href="https://flowse.herokuapp.com/"><button className="Work_btn">Go</button></a> */}
                 </div>
 
                 <div className="ironhack_project">
@@ -78,7 +78,7 @@ export default function Work() {
 
                     <p className="project_text">Full-Stack Web Application realised with ReactJS. Authentication, calendar,messaging, CRUD requests.</p>
 
-                    <a target="_blank" rel="noopener noreferrer" href="http://iron-airbnb.herokuapp.com/"><button className="Work_btn">Go</button></a>
+                    {/* <a target="_blank" rel="noopener noreferrer" href="http://iron-airbnb.herokuapp.com/"><button className="Work_btn">Go</button></a> */}
                 </div>
             </div>
 
@@ -134,7 +134,7 @@ export default function Work() {
                     in different themes. Admin authentication to add, edit, delete pictures from the
                     sliders.</p>
 
-                    <a target="blank" rel="noopener noreferrer" href="https://ameliepeingnezphotography.herokuapp.com/"><button className="Work_btn">Go</button></a>
+                    {/* <a target="blank" rel="noopener noreferrer" href="https://ameliepeingnezphotography.herokuapp.com/"><button className="Work_btn">Go</button></a> */}
                 </div>
             </div>
         </div>
