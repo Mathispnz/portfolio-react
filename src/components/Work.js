@@ -134,7 +134,7 @@ export default function Work() {
                     in different themes. Admin authentication to add, edit, delete pictures from the
                     sliders.</p>
 
-                    {/* <a target="blank" rel="noopener noreferrer" href="https://ameliepeingnezphotography.herokuapp.com/"><button className="Work_btn">Go</button></a> */}
+                    <a target="blank" rel="noopener noreferrer" href="https://ameliepeingnezphotography.herokuapp.com/"><button className="Work_btn">Go</button></a>
                 </div>
             </div>
         </div>
